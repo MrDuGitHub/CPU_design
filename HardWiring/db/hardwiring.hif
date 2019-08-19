@@ -1,0 +1,879 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+tri|
+alu|mov|
+alu|mul|
+alu|8b-add|
+alu|3c1|
+alu|
+2c1|
+controller|wr|
+controller|s3|
+controller|s2|
+controller|s1|
+controller|s0|
+controller|rd|
+controller|rb|
+controller|ra|
+controller|pb|
+controller|ma|
+controller|m|
+controller|g|
+controller|en1|
+controller|en0|
+controller|cpr1|
+controller|cpr0|
+controller|cpmar|
+controller|cppc|
+controller|cpir|
+controller|cn|
+controller|c|
+op|
+beat|
+controller|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74273
+# storage
+db|hardwiring.(1).cnf
+db|hardwiring.(1).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74273:MAR
+74273:IR
+74273:R0
+74273:PC
+74273:R1
+}
+# macro_sequence
+
+# end
+# entity
+3C1
+# storage
+db|hardwiring.(3).cnf
+db|hardwiring.(3).cnf
+# case_insensitive
+# source_file
+alu|3c1|3C1.bdf
+257d83fec076ba27ffe2f2fd2ebbbbed
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|3C1:inst14
+}
+# macro_sequence
+
+# end
+# entity
+8b_add
+# storage
+db|hardwiring.(4).cnf
+db|hardwiring.(4).cnf
+# case_insensitive
+# source_file
+alu|8b-add|8b_add.bdf
+dcfea4ce1ec47fbfd0546c4e2cae6583
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|8b_add:inst11
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|hardwiring.(5).cnf
+db|hardwiring.(5).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|8b_add:inst11|74181:inst
+ALU:inst10|8b_add:inst11|74181:inst1
+}
+# macro_sequence
+
+# end
+# entity
+MUL
+# storage
+db|hardwiring.(6).cnf
+db|hardwiring.(6).cnf
+# case_insensitive
+# source_file
+alu|mul|MUL.bdf
+88ba5f9f4975b4a9bfb8fcef6274954
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|MUL:inst12
+}
+# macro_sequence
+
+# end
+# entity
+74285
+# storage
+db|hardwiring.(7).cnf
+db|hardwiring.(7).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74285.bdf
+3b73752db1d377fb87531feba2f5df5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|MUL:inst12|74285:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74284
+# storage
+db|hardwiring.(8).cnf
+db|hardwiring.(8).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74284.bdf
+6c709183d9d28fbe1fe22cf210d55ec6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|MUL:inst12|74284:inst
+}
+# macro_sequence
+
+# end
+# entity
+mov
+# storage
+db|hardwiring.(9).cnf
+db|hardwiring.(9).cnf
+# case_insensitive
+# source_file
+alu|mov|mov.bdf
+49de9feae28b60c7d8b3e1ec2474e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|mov:inst13
+}
+# macro_sequence
+
+# end
+# entity
+74198
+# storage
+db|hardwiring.(10).cnf
+db|hardwiring.(10).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74198.bdf
+84eaf04a113e8b50dd62f877e31dc1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10|mov:inst13|74198:inst
+}
+# macro_sequence
+
+# end
+# entity
+MA
+# storage
+db|hardwiring.(12).cnf
+db|hardwiring.(12).cnf
+# case_insensitive
+# source_file
+controller|ma|MA.bdf
+85c7fc6ddc907dbe744e603af17a7965
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|MA:inst11
+}
+# macro_sequence
+
+# end
+# entity
+PB
+# storage
+db|hardwiring.(14).cnf
+db|hardwiring.(14).cnf
+# case_insensitive
+# source_file
+controller|pb|PB.bdf
+6462769bbedc3465764e76f150b7f6cf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|PB:inst9
+}
+# macro_sequence
+
+# end
+# entity
+EN0
+# storage
+db|hardwiring.(16).cnf
+db|hardwiring.(16).cnf
+# case_insensitive
+# source_file
+controller|en0|EN0.bdf
+7ba4aae2908ee269bd37c561ad1ba885
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|EN0:inst10
+}
+# macro_sequence
+
+# end
+# entity
+EN1
+# storage
+db|hardwiring.(17).cnf
+db|hardwiring.(17).cnf
+# case_insensitive
+# source_file
+controller|en1|EN1.bdf
+13ebba1bd8b3634ed25820d1b27b4c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|EN1:inst6
+}
+# macro_sequence
+
+# end
+# entity
+CPPC
+# storage
+db|hardwiring.(20).cnf
+db|hardwiring.(20).cnf
+# case_insensitive
+# source_file
+controller|cppc|CPPC.bdf
+98f35367df57af9169103d506dd4e9c8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CPPC:inst3
+}
+# macro_sequence
+
+# end
+# entity
+CPIR
+# storage
+db|hardwiring.(21).cnf
+db|hardwiring.(21).cnf
+# case_insensitive
+# source_file
+controller|cpir|CPIR.bdf
+bb455730c0e7aefccb3ff4e2274b62
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CPIR:inst2
+}
+# macro_sequence
+
+# end
+# entity
+C
+# storage
+db|hardwiring.(25).cnf
+db|hardwiring.(25).cnf
+# case_insensitive
+# source_file
+controller|c|C.bdf
+355751605e2d4885f4f557fa5c4a31
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|C:inst13
+}
+# macro_sequence
+
+# end
+# entity
+G
+# storage
+db|hardwiring.(26).cnf
+db|hardwiring.(26).cnf
+# case_insensitive
+# source_file
+controller|g|G.bdf
+bff3648e23612b62ac5564c54e78e2e8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|G:inst15
+}
+# macro_sequence
+
+# end
+# entity
+M
+# storage
+db|hardwiring.(27).cnf
+db|hardwiring.(27).cnf
+# case_insensitive
+# source_file
+controller|m|M.bdf
+effa2653b56e7518ccf0447a46b23245
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|M:inst
+}
+# macro_sequence
+
+# end
+# entity
+S2
+# storage
+db|hardwiring.(29).cnf
+db|hardwiring.(29).cnf
+# case_insensitive
+# source_file
+controller|s2|S2.bdf
+b945692cd578b65adaba519fd0f4c2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|S2:inst21
+}
+# macro_sequence
+
+# end
+# entity
+S1
+# storage
+db|hardwiring.(30).cnf
+db|hardwiring.(30).cnf
+# case_insensitive
+# source_file
+controller|s1|S1.bdf
+3e94261882077d8402751e4a33346c4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|S1:inst23
+}
+# macro_sequence
+
+# end
+# entity
+S0
+# storage
+db|hardwiring.(31).cnf
+db|hardwiring.(31).cnf
+# case_insensitive
+# source_file
+controller|s0|S0.bdf
+a11ceef945b2fb28631cef21ed5561d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|S0:inst24
+}
+# macro_sequence
+
+# end
+# entity
+CN
+# storage
+db|hardwiring.(32).cnf
+db|hardwiring.(32).cnf
+# case_insensitive
+# source_file
+controller|cn|CN.bdf
+089ec1d245fc678fa949e7ef76ef73
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CN:inst20
+}
+# macro_sequence
+
+# end
+# entity
+2-4
+# storage
+db|hardwiring.(34).cnf
+db|hardwiring.(34).cnf
+# case_insensitive
+# source_file
+beat|2-4.bdf
+4a41f5728c99c91792eaa6a8bfe5d8d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+beat:inst|2-4:inst1
+}
+# macro_sequence
+
+# end
+# entity
+4-1counter
+# storage
+db|hardwiring.(35).cnf
+db|hardwiring.(35).cnf
+# case_insensitive
+# source_file
+beat|4-1counter.bdf
+15623bb1c6d2e4c7a4832a3d198ac445
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+beat:inst|4-1counter:inst
+}
+# macro_sequence
+
+# end
+# entity
+op
+# storage
+db|hardwiring.(37).cnf
+db|hardwiring.(37).cnf
+# case_insensitive
+# source_file
+op|op.bdf
+94d9ccedd9922a913628f8b6f7e9024
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+op:inst3
+}
+# macro_sequence
+
+# end
+# entity
+2C1
+# storage
+db|hardwiring.(38).cnf
+db|hardwiring.(38).cnf
+# case_insensitive
+# source_file
+2c1|2C1.bdf
+3d7335c0ff63384115cee13a43716373
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+2C1:inst6
+2C1:B
+}
+# macro_sequence
+
+# end
+# entity
+tri-8
+# storage
+db|hardwiring.(39).cnf
+db|hardwiring.(39).cnf
+# case_insensitive
+# source_file
+tri|tri-8.bdf
+41a5bdd5c3bcb13081a85ae7cb2b49a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tri-8:inst23
+}
+# macro_sequence
+
+# end
+# entity
+RD
+# storage
+db|hardwiring.(23).cnf
+db|hardwiring.(23).cnf
+# case_insensitive
+# source_file
+controller|rd|RD.bdf
+291a9315da03ebd9552ad8f3584b19
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|RD:inst1
+}
+# macro_sequence
+
+# end
+# entity
+WR
+# storage
+db|hardwiring.(24).cnf
+db|hardwiring.(24).cnf
+# case_insensitive
+# source_file
+controller|wr|WR.bdf
+2fbf8872be38f7792e846c7e5f8f0f0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|WR:inst12
+}
+# macro_sequence
+
+# end
+# entity
+ALU
+# storage
+db|hardwiring.(2).cnf
+db|hardwiring.(2).cnf
+# case_insensitive
+# source_file
+alu|ALU.bdf
+836c42401c32f45f125a64697e7d8a0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+ALU
+# storage
+db|hardwiring.(40).cnf
+db|hardwiring.(40).cnf
+# case_insensitive
+# source_file
+alu|mul|ALU.bdf
+836c42401c32f45f125a64697e7d8a0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst10
+}
+# macro_sequence
+
+# end
+# entity
+CPMAR
+# storage
+db|hardwiring.(22).cnf
+db|hardwiring.(22).cnf
+# case_insensitive
+# source_file
+controller|cpmar|CPMAR.bdf
+dee84167b983a19c810c29891a7c829
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CPMAR:inst19
+}
+# macro_sequence
+
+# end
+# entity
+beat
+# storage
+db|hardwiring.(33).cnf
+db|hardwiring.(33).cnf
+# case_insensitive
+# source_file
+beat|beat.bdf
+4497f5aa778a7adbe239011c6704a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+beat:inst
+}
+# macro_sequence
+
+# end
+# entity
+lxmc
+# storage
+db|hardwiring.(36).cnf
+db|hardwiring.(36).cnf
+# case_insensitive
+# source_file
+beat|lxmc.bdf
+18d6fd59a4844a9a884bafe605ea16
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+lxmc:inst5
+}
+# macro_sequence
+
+# end
+# entity
+S3
+# storage
+db|hardwiring.(28).cnf
+db|hardwiring.(28).cnf
+# case_insensitive
+# source_file
+controller|s3|S3.bdf
+10d655dd92fc6cb82dd6ece3ef5e24a6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|S3:inst14
+}
+# macro_sequence
+
+# end
+# entity
+Controller
+# storage
+db|hardwiring.(11).cnf
+db|hardwiring.(11).cnf
+# case_insensitive
+# source_file
+controller|Controller.bdf
+46107554e281422bbfdb23f820faea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12
+}
+# macro_sequence
+
+# end
+# entity
+RA
+# storage
+db|hardwiring.(13).cnf
+db|hardwiring.(13).cnf
+# case_insensitive
+# source_file
+controller|ra|RA.bdf
+1338d7366bbd65fe3b1af4a9264e8afd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|RA:inst16
+}
+# macro_sequence
+
+# end
+# entity
+RB
+# storage
+db|hardwiring.(15).cnf
+db|hardwiring.(15).cnf
+# case_insensitive
+# source_file
+controller|rb|RB.bdf
+a86c8b1d0d71b77e19161f69c8786f4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|RB:inst17
+}
+# macro_sequence
+
+# end
+# entity
+CPR0
+# storage
+db|hardwiring.(18).cnf
+db|hardwiring.(18).cnf
+# case_insensitive
+# source_file
+controller|cpr0|CPR0.bdf
+13966157fd8a6eb3cc6ef91f11548c18
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CPR0:inst18
+}
+# macro_sequence
+
+# end
+# entity
+CPR1
+# storage
+db|hardwiring.(19).cnf
+db|hardwiring.(19).cnf
+# case_insensitive
+# source_file
+controller|cpr1|CPR1.bdf
+5b6fd998e7e134e18d51a036b4c42a20
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Controller:inst12|CPR1:inst22
+}
+# macro_sequence
+
+# end
+# entity
+hardwiring
+# storage
+db|hardwiring.(0).cnf
+db|hardwiring.(0).cnf
+# case_insensitive
+# source_file
+hardwiring.bdf
+8275799870e71a68e978cd973ec48e1a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,98 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		hardwiring_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C7
+set_global_assignment -name TOP_LEVEL_ENTITY hardwiring
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:12:41  MAY 21, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name BDF_FILE hardwiring.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "D:/Monday/Project/HardWiring/hardwiring.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_132 -to CLK
+set_location_assignment PIN_80 -to K1
+set_location_assignment PIN_131 -to LXMC
+set_global_assignment -name SEARCH_PATH tri
+set_global_assignment -name SEARCH_PATH alu/mov
+set_global_assignment -name SEARCH_PATH alu/mul
+set_global_assignment -name SEARCH_PATH "alu/8b-add"
+set_global_assignment -name SEARCH_PATH alu/3c1
+set_global_assignment -name SEARCH_PATH alu
+set_global_assignment -name SEARCH_PATH 2c1
+set_global_assignment -name SEARCH_PATH controller/wr
+set_global_assignment -name SEARCH_PATH controller/s3
+set_global_assignment -name SEARCH_PATH controller/s2
+set_global_assignment -name SEARCH_PATH controller/s1
+set_global_assignment -name SEARCH_PATH controller/s0
+set_global_assignment -name SEARCH_PATH controller/rd
+set_global_assignment -name SEARCH_PATH controller/rb
+set_global_assignment -name SEARCH_PATH controller/ra
+set_global_assignment -name SEARCH_PATH controller/pb
+set_global_assignment -name SEARCH_PATH controller/ma
+set_global_assignment -name SEARCH_PATH controller/m
+set_global_assignment -name SEARCH_PATH controller/g
+set_global_assignment -name SEARCH_PATH controller/en1
+set_global_assignment -name SEARCH_PATH controller/en0
+set_global_assignment -name SEARCH_PATH controller/cpr1
+set_global_assignment -name SEARCH_PATH controller/cpr0
+set_global_assignment -name SEARCH_PATH controller/cpmar
+set_global_assignment -name SEARCH_PATH controller/cppc
+set_global_assignment -name SEARCH_PATH controller/cpir
+set_global_assignment -name SEARCH_PATH controller/cn
+set_global_assignment -name SEARCH_PATH controller/c
+set_global_assignment -name SEARCH_PATH op
+set_global_assignment -name SEARCH_PATH beat
+set_global_assignment -name SEARCH_PATH controller
+set_location_assignment PIN_168 -to "RAM-R0"
+set_location_assignment PIN_169 -to "RAM-R1"
+set_location_assignment PIN_170 -to "RAM-R2"
+set_location_assignment PIN_171 -to "RAM-R3"
+set_location_assignment PIN_173 -to "RAM-R4"
+set_location_assignment PIN_175 -to "RAM-R5"
+set_location_assignment PIN_176 -to "RAM-R6"
+set_location_assignment PIN_179 -to "RAM-R7"
+set_location_assignment PIN_192 -to RAM0
+set_location_assignment PIN_193 -to RAM1
+set_location_assignment PIN_195 -to RAM2
+set_location_assignment PIN_197 -to RAM3
+set_location_assignment PIN_198 -to RAM4
+set_location_assignment PIN_199 -to RAM5
+set_location_assignment PIN_200 -to RAM6
+set_location_assignment PIN_201 -to RAM7
+set_location_assignment PIN_63 -to RD
+set_location_assignment PIN_64 -to WR
+set_location_assignment PIN_77 -to K0
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_location_assignment PIN_81 -to K2

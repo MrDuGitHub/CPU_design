@@ -1,0 +1,7 @@
+|G
+G <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W2 => inst.IN0
+HALT => inst.IN1
+T1 => inst.IN2
+
+

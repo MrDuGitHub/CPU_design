@@ -1,0 +1,486 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+wr|
+s3|
+s2|
+s1|
+s0|
+rd|
+rb|
+ra|
+pb|
+m|
+g|
+en1|
+en0|
+cpr1|
+cpr0|
+cpmar|
+cppc|
+cpir|
+cn|
+ma|
+c|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+M
+# storage
+db|Controller.(1).cnf
+db|Controller.(1).cnf
+# case_insensitive
+# source_file
+m|M.bdf
+effa2653b56e7518ccf0447a46b23245
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+M:inst
+}
+# macro_sequence
+
+# end
+# entity
+MA
+# storage
+db|Controller.(4).cnf
+db|Controller.(4).cnf
+# case_insensitive
+# source_file
+ma|MA.bdf
+85c7fc6ddc907dbe744e603af17a7965
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MA:inst11
+}
+# macro_sequence
+
+# end
+# entity
+C
+# storage
+db|Controller.(6).cnf
+db|Controller.(6).cnf
+# case_insensitive
+# source_file
+c|C.bdf
+355751605e2d4885f4f557fa5c4a31
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+C:inst13
+}
+# macro_sequence
+
+# end
+# entity
+CPIR
+# storage
+db|Controller.(12).cnf
+db|Controller.(12).cnf
+# case_insensitive
+# source_file
+cpir|CPIR.bdf
+bb455730c0e7aefccb3ff4e2274b62
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CPIR:inst2
+}
+# macro_sequence
+
+# end
+# entity
+CN
+# storage
+db|Controller.(13).cnf
+db|Controller.(13).cnf
+# case_insensitive
+# source_file
+cn|CN.bdf
+089ec1d245fc678fa949e7ef76ef73
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CN:inst20
+}
+# macro_sequence
+
+# end
+# entity
+CPPC
+# storage
+db|Controller.(16).cnf
+db|Controller.(16).cnf
+# case_insensitive
+# source_file
+cppc|CPPC.bdf
+98f35367df57af9169103d506dd4e9c8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CPPC:inst3
+}
+# macro_sequence
+
+# end
+# entity
+CPR1
+# storage
+db|Controller.(17).cnf
+db|Controller.(17).cnf
+# case_insensitive
+# source_file
+cpr1|CPR1.bdf
+5d28a52b3c6e3abd78268d86c1163fa7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CPR1:inst4
+}
+# macro_sequence
+
+# end
+# entity
+CPR0
+# storage
+db|Controller.(18).cnf
+db|Controller.(18).cnf
+# case_insensitive
+# source_file
+cpr0|CPR0.bdf
+d2bca331bc31ed97d78753239dfc89b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CPR0:inst5
+}
+# macro_sequence
+
+# end
+# entity
+EN1
+# storage
+db|Controller.(19).cnf
+db|Controller.(19).cnf
+# case_insensitive
+# source_file
+en1|EN1.bdf
+13ebba1bd8b3634ed25820d1b27b4c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+EN1:inst6
+}
+# macro_sequence
+
+# end
+# entity
+RB
+# storage
+db|Controller.(20).cnf
+db|Controller.(20).cnf
+# case_insensitive
+# source_file
+rb|RB.bdf
+c244cb2adf3af7dd73ac2eb518ccc5b1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+RB:inst8
+}
+# macro_sequence
+
+# end
+# entity
+PB
+# storage
+db|Controller.(21).cnf
+db|Controller.(21).cnf
+# case_insensitive
+# source_file
+pb|PB.bdf
+6462769bbedc3465764e76f150b7f6cf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PB:inst9
+}
+# macro_sequence
+
+# end
+# entity
+RA
+# storage
+db|Controller.(3).cnf
+db|Controller.(3).cnf
+# case_insensitive
+# source_file
+ra|RA.bdf
+552cfcbda21ab1d66d80896d3d83b7d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+RA:inst7
+}
+# macro_sequence
+
+# end
+# entity
+EN0
+# storage
+db|Controller.(7).cnf
+db|Controller.(7).cnf
+# case_insensitive
+# source_file
+en0|EN0.bdf
+7ba4aae2908ee269bd37c561ad1ba885
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+EN0:inst10
+}
+# macro_sequence
+
+# end
+# entity
+G
+# storage
+db|Controller.(9).cnf
+db|Controller.(9).cnf
+# case_insensitive
+# source_file
+g|G.bdf
+bff3648e23612b62ac5564c54e78e2e8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+G:inst15
+}
+# macro_sequence
+
+# end
+# entity
+S1
+# storage
+db|Controller.(11).cnf
+db|Controller.(11).cnf
+# case_insensitive
+# source_file
+s1|S1.bdf
+3e94261882077d8402751e4a33346c4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+S1:inst23
+}
+# macro_sequence
+
+# end
+# entity
+S0
+# storage
+db|Controller.(14).cnf
+db|Controller.(14).cnf
+# case_insensitive
+# source_file
+s0|S0.bdf
+a11ceef945b2fb28631cef21ed5561d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+S0:inst24
+}
+# macro_sequence
+
+# end
+# entity
+RD
+# storage
+db|Controller.(2).cnf
+db|Controller.(2).cnf
+# case_insensitive
+# source_file
+rd|RD.bdf
+291a9315da03ebd9552ad8f3584b19
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+RD:inst1
+}
+# macro_sequence
+
+# end
+# entity
+WR
+# storage
+db|Controller.(5).cnf
+db|Controller.(5).cnf
+# case_insensitive
+# source_file
+wr|WR.bdf
+2fbf8872be38f7792e846c7e5f8f0f0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+WR:inst12
+}
+# macro_sequence
+
+# end
+# entity
+S3
+# storage
+db|Controller.(8).cnf
+db|Controller.(8).cnf
+# case_insensitive
+# source_file
+s3|S3.bdf
+375ee5f7e235c9ba84ebfcf0b0578a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+S3:inst16
+}
+# macro_sequence
+
+# end
+# entity
+S2
+# storage
+db|Controller.(10).cnf
+db|Controller.(10).cnf
+# case_insensitive
+# source_file
+s2|S2.bdf
+b945692cd578b65adaba519fd0f4c2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+S2:inst21
+}
+# macro_sequence
+
+# end
+# entity
+Controller
+# storage
+db|Controller.(0).cnf
+db|Controller.(0).cnf
+# case_insensitive
+# source_file
+Controller.bdf
+5adc9c7d49de9afe332f17467786d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+CPMAR
+# storage
+db|Controller.(15).cnf
+db|Controller.(15).cnf
+# case_insensitive
+# source_file
+cpmar|CPMAR.bdf
+b0e7e131873f38fdc1db7e497fdb87
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CPMAR:inst17
+}
+# macro_sequence
+
+# end
+# complete
+

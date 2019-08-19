@@ -1,0 +1,22 @@
+|CPPC
+CPPC <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+W1 => inst.IN0
+T3 => inst.IN1
+T3 => inst6.IN1
+W2 => inst3.IN0
+W2 => inst6.IN0
+W2 => inst1.IN0
+T2 => inst3.IN1
+B1 => inst2.IN0
+B1 => inst6.IN2
+LOAD5 => inst2.IN1
+LOAD4 => inst2.IN2
+LOAD6 => inst2.IN3
+STOR4 => inst2.IN4
+LOAD7 => inst2.IN5
+STOR5 => inst2.IN6
+T1 => inst1.IN1
+B0 => inst1.IN2
+P => inst5.IN1
+
+

@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.812 ns
+From           : inst2
+To             : W1
+From Clock     : LXMC1
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'LXMC1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 405.02 MHz ( period = 2.469 ns )
+From           : inst2
+To             : inst2
+From Clock     : LXMC1
+To Clock       : LXMC1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'LXMC1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst2
+To             : inst2
+From Clock     : LXMC1
+To Clock       : LXMC1
+Failed Paths   : 1
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1
+
+--------------------------------------------------------------------------------------
+

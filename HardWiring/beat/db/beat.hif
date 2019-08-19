@@ -1,0 +1,105 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+..|lxmc|
+..|2-4|
+..|4-1counter|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+2-4
+# storage
+db|beat.(1).cnf
+db|beat.(1).cnf
+# case_insensitive
+# source_file
+2-4.bdf
+4a41f5728c99c91792eaa6a8bfe5d8d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+2-4:inst1
+}
+# macro_sequence
+
+# end
+# entity
+4-1counter
+# storage
+db|beat.(2).cnf
+db|beat.(2).cnf
+# case_insensitive
+# source_file
+4-1counter.bdf
+15623bb1c6d2e4c7a4832a3d198ac445
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4-1counter:inst
+}
+# macro_sequence
+
+# end
+# entity
+lxmc
+# storage
+db|beat.(3).cnf
+db|beat.(3).cnf
+# case_insensitive
+# source_file
+lxmc.bdf
+99e62ea01abb745455c2f695c882f333
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+beat
+# storage
+db|beat.(0).cnf
+db|beat.(0).cnf
+# case_insensitive
+# source_file
+beat.bdf
+2890f7c535c4caf5a9621763e7408f1e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

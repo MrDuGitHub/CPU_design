@@ -1,0 +1,258 @@
+﻿add       000001 R1=R1+R2 
+sub       000010
+mul       000011
+and       000100
+or        000101
+not       000110
+xor       000111
+
+mov0      001000
+mov1      001001
+
+b0        001100
+b1   	  001101
+
+load      0100 0000
+	       0010
+	       0100
+	       0110
+	       1000
+	       1010
+	       1100
+	       1110
+store     0101 0000
+	       0010
+	       0100
+	       0110
+	       1000
+	       1010
+	       1100
+	       1110
+
+halt      0110
+
+LOAD R0 #0A    0100 1000  00001010  48 0A
+LOAD R1 #09    0100 1010  00001001  4A 09
+STOR #F0 R0    0101 1000  11110000  58 F0
+STOR #F1 R1    0101 1010  11110001  5A F1 
+B              0011 0000            30
+LOAD #F0 R0    0100 1100  11110000  4C F0
+LOAD #F1 R1    0100 1110  11110001  4E F1
+ADD            0000 0100            04
+STOR #F2 R0    0101 1100  11110010  58 F2
+HALT           0110 0000            60
+
+00H:
+	RAM(MAR)->IR              3E8821
+	PC+1->PC    //取指周期    121601
+	QJP                       000003
+04H:
+	R0+R1->R0                 136201
+	PC->MAR                   341A01
+	JP          //ADD         000002
+08H:
+	R0-R1->R0                 0C6201
+	PC->MAR			  341A01
+	JP          //SUB         000002
+0CH:
+	RO mul R1->R0             016281
+	PC->MAR                   341A01
+	JP          //MUL         000002ror
+10H:	
+	R0 and R1->R0             366201
+	PC->MAR                   341A01
+	JP          //AND         000002
+14H:
+	R0 or R1->R0              3C6201 341A01 000002
+	PC->MAR
+	JP         //OR
+18H:
+	! R0->R0                  204201 341A01 000002
+	PC->MAR
+	JP         //NOT
+1CH:    
+	R0 xor R1->R0
+	PC->MAR
+	JP        //XOR           2C6201 341A01 000002
+20H:
+	R0=R1
+	PC->MAR
+	JP        //MOV0          346201 341A01 000002
+24H:
+	R1=R0
+	PC->MAR
+	JP        //MOV1          3E6401 341A01 000002
+28H:
+	R0=RO
+	R0=R0/2
+	PC->MAR
+	JP        //ROR           264301 240301 341A01 000002
+2CH:
+	R0=R0
+	R0=R0*2
+	PC->MAR
+	JP        //LOR		  264301 220301 341A01 000002
+30H:
+	R0->PC
+	PC->MAR
+	JP        //B             3E6601 341A01 000002
+34H:
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->PC
+	PC->MAR
+	JP        //B             341A01 121601 3E8621 341A01 000002
+40H:
+	JP RAM(R0)->R0            00A002 000000
+42H:
+	JP RAM(R0)->R1            00A402 000000
+44H:
+	JP RAM(R1)->R0	          00A802 000000
+46H:
+	JP RAM(R1)->R1            00AC02 000000
+48H: 
+	JP #X->R0                 00B002 000000
+4AH:
+	JP #X->R1                 00B802 000000
+4CH:
+	JP RAM(#X)->R0            00C002 000000
+4EH:
+	JP RAM(#X)->R1            00C802 000000
+50H:
+	JP R0->RAM(R0)            00D002 000000
+52H:
+	JP R1->RAM(R0)            00D402 000000
+54H:
+	JP R0->RAM(R1)            00D802 000000
+56H: 
+	JP R1->RAM(R1)            00DC02 000000
+58H:
+	JP R0->RAM(#X)            00E002 000000
+5AH: 
+	JP R1->RAM(#X)            00E802 000000
+5CH:
+	JP R0->RAM(RAM(#X))       00F002 000000
+5EH:
+	JP R1->RAM(RAM(#X))       00F802 000000
+60H:
+	G=1                       000008
+
+RAM(R0)->R0:          A0H:        3E4A01 3E8221 341A01 000002
+	R0->MAR 
+	RAM(MAR)->R0
+	PC->MAR
+	JP
+RAM(R0)->R1:          A4H         3E4A01 3E8421 341A01 000002
+	R0->MAR
+	RAM(MAR)->R1
+	PC->MAR
+	JP
+RAM(R1)->R0:          A8H:        3E2A01 3E8221 341A01 000002
+	R1->MAR 
+	RAM(MAR)->R0
+	PC->MAR
+	JP
+RAM(R1)->R1:          ACH         3E2A01 3E8421 341A01 000002
+	R1->MAR
+	RAM(MAR)->R1
+	PC->MAR
+	JP
+#X->R0:               B0H:        341A01 121601 3E8221 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->R0
+	PC->MAR
+	JP
+
+#X->R1:               B8H:        341A01 121601 3E8421 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->R1
+	PC->MAR
+	JP
+RAM(RAM[#X])->R0:     C0H:        341A01 121601 3E8A21 3E8221 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	RAM(MAR)->R0
+	PC->MAR
+	JP
+RAM(RAM[#X])->R1:     C8H:        341A01 121601 3E8A21 3E8421 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	RAM(MAR)->R1
+	PC->MAR
+	JP
+
+R0->RAM(R0):	      D0H:        3E4A01 3E4051 341A01 000002
+	R0->MAR
+	R0->RAM(MAR)
+	PC->MAR
+	JP
+R1->RAM(R0): 	                  3E4A01 342051 341A01 000002
+	R0->MAR
+	R1->RAM(MAR)
+	PC->MAR
+	JP
+R0->RAM(R1):          D8H:        342A01 3E4051 341A01 000002
+	R1->MAR
+	R0->RAM(MAR)
+	PC->MAR
+	JP
+R1->RAM(R1):                      342A01 342051 341A01 000002
+	R1->MAR
+	R1->RAM(MAR)
+	PC->MAR
+	JP
+R0->RAM(#X):	      E0H:        341A01 121601 3E8A21 3E4051 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	R0->RAM(MAR)
+	PC->MAR
+	JP
+R1->RAM(#X): 	      E8H:        341A01 121601 3E8A21 342051 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	R1->RAM(MAR)
+	PC->MAR
+	JP
+R0->RAM(RAM[#X]):     F0H:        341A01 121601 3E8A21 3E8A21 3E4051 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	RAM(MAR)->MAR
+	R0->RAM(MAR)
+	PC->MAR
+	JP
+R1->RAM(RAM[#X]):     F8H:        341A01 121601 3E8A21 348A21 342051 341A01 000002
+	PC->MAR
+	PC+1->PC
+	RAM(MAR)->MAR
+	RAM(MAR)->MAR
+	R1->RAM(MAR)
+	PC->MAR
+	JP
+
+/*
+cmp
+
+
+循环左移  1100
+循环左移  1101
+循环左移  1110 
+循环左移  1111  74198 74194
+
+保留指令  0001 74284 74285
+
+
+*/
+
+//cmp       0010
+//cmn       0011
+//进位加    0101
+//进位减    0111
+//bic       1010   逻辑与非
+1 3969053308I

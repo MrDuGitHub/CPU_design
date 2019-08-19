@@ -1,0 +1,26 @@
+|RA
+RA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W2 => inst3.IN0
+W2 => inst6.IN0
+W2 => inst1.IN0
+T2 => inst3.IN1
+STOR2 => inst10.IN0
+STOR0 => inst10.IN1
+STOR0 => inst8.IN11
+T4 => inst6.IN1
+STOR4 => inst6.IN2
+T1 => inst1.IN1
+STOR1 => inst9.IN0
+MUL => inst8.IN0
+SUB => inst8.IN1
+ADD => inst8.IN2
+NOT => inst8.IN3
+OR => inst8.IN4
+AND => inst8.IN5
+MOV0 => inst8.IN6
+XOR => inst8.IN7
+B0 => inst8.IN8
+LOAD1 => inst8.IN9
+LOAD0 => inst8.IN10
+
+

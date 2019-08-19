@@ -1,0 +1,8 @@
+|4-1counter
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLK => inst.CLK
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

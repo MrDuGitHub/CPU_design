@@ -1,0 +1,129 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		microprogram_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C7
+set_global_assignment -name TOP_LEVEL_ENTITY microprogram
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:58:39  MAY 07, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name BDF_FILE microprogram.bdf
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name QIP_FILE lpm_decode0.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_179 -to "RAM-R7"
+set_location_assignment PIN_192 -to RAM0
+set_location_assignment PIN_193 -to RAM1
+set_location_assignment PIN_195 -to RAM2
+set_location_assignment PIN_197 -to RAM3
+set_location_assignment PIN_198 -to RAM4
+set_location_assignment PIN_199 -to RAM5
+set_location_assignment PIN_200 -to RAM6
+set_location_assignment PIN_201 -to RAM7
+set_location_assignment PIN_63 -to RD
+set_location_assignment PIN_180 -to "ROM-R0"
+set_location_assignment PIN_181 -to "ROM-R1"
+set_location_assignment PIN_182 -to "ROM-R2"
+set_location_assignment PIN_185 -to "ROM-R3"
+set_location_assignment PIN_188 -to "ROM-R5"
+set_location_assignment PIN_189 -to "ROM-R6"
+set_location_assignment PIN_191 -to "ROM-R7"
+set_location_assignment PIN_187 -to "ROM-R4"
+set_location_assignment PIN_89 -to UIR0
+set_location_assignment PIN_90 -to UIR1
+set_location_assignment PIN_92 -to UIR2
+set_location_assignment PIN_95 -to UIR4
+set_location_assignment PIN_96 -to UIR5
+set_location_assignment PIN_97 -to UIR6
+set_location_assignment PIN_101 -to UIR8
+set_location_assignment PIN_103 -to UIR10
+set_location_assignment PIN_102 -to UIR9
+set_location_assignment PIN_104 -to UIR11
+set_location_assignment PIN_105 -to UIR12
+set_location_assignment PIN_106 -to UIR13
+set_location_assignment PIN_108 -to UIR14
+set_location_assignment PIN_110 -to UIR15
+set_location_assignment PIN_112 -to UIR16
+set_location_assignment PIN_113 -to UIR17
+set_location_assignment PIN_114 -to UIR18
+set_location_assignment PIN_115 -to UIR19
+set_location_assignment PIN_116 -to UIR20
+set_location_assignment PIN_117 -to UIR21
+set_location_assignment PIN_64 -to WR
+set_global_assignment -name MISC_FILE "D:/Monday/Project/microprogram/microprogram.dpf"
+set_location_assignment PIN_77 -to K0
+set_location_assignment PIN_132 -to P
+set_location_assignment PIN_168 -to "RAM-R0"
+set_location_assignment PIN_169 -to "RAM-R1"
+set_location_assignment PIN_170 -to "RAM-R2"
+set_location_assignment PIN_171 -to "RAM-R3"
+set_location_assignment PIN_173 -to "RAM-R4"
+set_location_assignment PIN_175 -to "RAM-R5"
+set_location_assignment PIN_176 -to "RAM-R6"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_location_assignment PIN_80 -to K1
+set_location_assignment PIN_131 -to LXMC
+set_location_assignment PIN_61 -to uir
+set_location_assignment PIN_94 -to UIR3
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_location_assignment PIN_60 -to urd
+set_location_assignment PIN_142 -to IR0
+set_location_assignment PIN_143 -to IR1
+set_location_assignment PIN_144 -to IR2
+set_location_assignment PIN_145 -to IR3
+set_location_assignment PIN_146 -to IR4
+set_location_assignment PIN_147 -to IR5
+set_location_assignment PIN_149 -to IR6
+set_location_assignment PIN_150 -to IR7
+set_global_assignment -name SEARCH_PATH alu
+set_global_assignment -name SEARCH_PATH "2c1 - ¸±±¾"
+set_global_assignment -name SEARCH_PATH "2-4"
+set_global_assignment -name SEARCH_PATH lxmc
+set_global_assignment -name SEARCH_PATH not
+set_global_assignment -name SEARCH_PATH tri
+set_global_assignment -name SEARCH_PATH adr
+set_global_assignment -name SEARCH_PATH upc
+set_global_assignment -name SEARCH_PATH 2c1
+set_global_assignment -name SEARCH_PATH "8b-add"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_99 -to UIR7
+set_location_assignment PIN_206 -to CLR
+set_location_assignment PIN_151 -to LR8
+set_location_assignment PIN_152 -to LR9
+set_location_assignment PIN_160 -to LR10
+set_location_assignment PIN_161 -to LR11
+set_location_assignment PIN_162 -to LR12
+set_location_assignment PIN_163 -to LR13
+set_location_assignment PIN_164 -to LR14
+set_location_assignment PIN_165 -to LR15

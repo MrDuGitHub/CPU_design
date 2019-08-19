@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 23 15:23:50 2018
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : S3
+Top-level Entity Name : S3
+Family : Cyclone II
+Total logic elements : 15
+    Total combinational functions : 15
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,35 @@
+|CPMAR
+CPMAR <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+W1 => inst.IN0
+T1 => inst.IN1
+T1 => inst1.IN1
+W2 => inst3.IN0
+W2 => inst6.IN0
+W2 => inst1.IN0
+T2 => inst3.IN1
+STOR3 => inst3.IN2
+STOR3 => inst5.IN3
+T3 => inst6.IN1
+LOAD6 => inst9.IN0
+LOAD6 => inst2.IN6
+STOR4 => inst9.IN1
+STOR4 => inst5.IN1
+STOR5 => inst9.IN2
+STOR5 => inst5.IN2
+LOAD7 => inst9.IN3
+LOAD7 => inst2.IN8
+LOAD1 => inst2.IN0
+LOAD0 => inst2.IN1
+B1 => inst2.IN2
+LOAD4 => inst2.IN3
+LOAD3 => inst2.IN4
+LOAD2 => inst2.IN5
+LOAD5 => inst2.IN7
+STOR1 => inst2.IN9
+STOR0 => inst2.IN10
+STOR2 => inst2.IN11
+P => inst4.IN1
+testt1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+testt3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+

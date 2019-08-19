@@ -1,0 +1,30 @@
+|EN0
+EN0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+W2 => inst14.IN0
+LOAD4 => inst10.IN0
+LOAD3 => inst10.IN1
+LOAD2 => inst10.IN2
+LOAD7 => inst10.IN3
+LOAD6 => inst10.IN4
+LOAD5 => inst10.IN5
+STOR1 => inst10.IN6
+STOR0 => inst10.IN7
+STOR2 => inst10.IN8
+STOR4 => inst10.IN9
+STOR3 => inst10.IN10
+STOR5 => inst10.IN11
+AND => inst9.IN0
+SUB => inst9.IN1
+ADD => inst9.IN2
+XOR => inst9.IN3
+NOT => inst9.IN4
+OR => inst9.IN5
+MOV1 => inst9.IN6
+MOV0 => inst9.IN7
+B0 => inst9.IN8
+LOAD0 => inst9.IN9
+B1 => inst9.IN10
+LOAD1 => inst9.IN11
+W1 => inst13.IN1
+
+

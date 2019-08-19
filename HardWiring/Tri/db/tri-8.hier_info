@@ -1,0 +1,27 @@
+|tri-8
+O0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+t0 => inst.DATAIN
+EN => inst.OE
+EN => inst1.OE
+EN => inst2.OE
+EN => inst3.OE
+EN => inst4.OE
+EN => inst5.OE
+EN => inst6.OE
+EN => inst7.OE
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+t1 => inst1.DATAIN
+O2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+t2 => inst2.DATAIN
+O3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+t3 => inst3.DATAIN
+O4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+t4 => inst4.DATAIN
+O5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+t5 => inst5.DATAIN
+O6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+t6 => inst6.DATAIN
+O7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+t7 => inst7.DATAIN
+
+

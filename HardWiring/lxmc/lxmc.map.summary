@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 10 20:14:13 2018
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : lxmc
+Top-level Entity Name : lxmc
+Family : Cyclone II
+Total logic elements : 1
+    Total combinational functions : 1
+    Dedicated logic registers : 1
+Total registers : 1
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

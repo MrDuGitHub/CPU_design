@@ -1,0 +1,43 @@
+|adr
+Y7 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+UIR15 => inst1.IN0
+JP => inst1.IN1
+JP => inst4.IN1
+JP => inst7.IN1
+JP => inst10.IN1
+JP => inst13.IN1
+JP => inst16.IN1
+JP => inst19.IN1
+JP => inst22.IN1
+IR7 => inst.IN0
+QJP => inst.IN1
+QJP => inst3.IN1
+QJP => inst6.IN1
+QJP => inst9.IN1
+QJP => inst12.IN1
+QJP => inst15.IN1
+QJP => inst18.IN1
+QJP => inst21.IN1
+Y6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+UIR14 => inst4.IN0
+IR6 => inst3.IN0
+Y5 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+UIR13 => inst7.IN0
+IR5 => inst6.IN0
+Y4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+UIR12 => inst10.IN0
+IR4 => inst9.IN0
+Y3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+UIR11 => inst13.IN0
+IR3 => inst12.IN0
+Y2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+UIR10 => inst16.IN0
+IR2 => inst15.IN0
+Y1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+UIR9 => inst19.IN0
+IR1 => inst18.IN0
+Y0 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+UIR8 => inst22.IN0
+IR0 => inst21.IN0
+
+

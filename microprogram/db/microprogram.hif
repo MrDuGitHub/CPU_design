@@ -1,0 +1,635 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+alu|
+2c1 - ¸±±¾|
+2-4|
+lxmc|
+not|
+tri|
+adr|
+upc|
+2c1|
+8b-add|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74273
+# storage
+db|microprogram.(1).cnf
+db|microprogram.(1).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74273:MAR
+74273:R0
+74273:PC
+74273:R1
+74273:IR
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|microprogram.(4).cnf
+db|microprogram.(4).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|8b_add:inst11|74181:inst
+ALU:inst6|8b_add:inst11|74181:inst1
+}
+# macro_sequence
+
+# end
+# entity
+2C1
+# storage
+db|microprogram.(5).cnf
+db|microprogram.(5).cnf
+# case_insensitive
+# source_file
+2C1.bdf
+fd4e14617b927358bdbfa978813d1b6c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+2C1:inst5
+2C1:B
+}
+# macro_sequence
+
+# end
+# entity
+2-4
+# storage
+db|microprogram.(6).cnf
+db|microprogram.(6).cnf
+# case_insensitive
+# source_file
+2-4.bdf
+4a41f5728c99c91792eaa6a8bfe5d8d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+2-4:inst10
+2-4:inst8
+2-4:inst9
+}
+# macro_sequence
+
+# end
+# entity
+not-8
+# storage
+db|microprogram.(7).cnf
+db|microprogram.(7).cnf
+# case_insensitive
+# source_file
+not-8.bdf
+8f4b78a5f6a7b8ee88164c2e3bf3536
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+not-8:inst23
+not-8:inst22
+}
+# macro_sequence
+
+# end
+# entity
+74138
+# storage
+db|microprogram.(8).cnf
+db|microprogram.(8).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74138.bdf
+6cadbea2e3f85766eb8e4e262292077
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74138:3-8_0
+74138:3-8_1
+}
+# macro_sequence
+
+# end
+# entity
+upc
+# storage
+db|microprogram.(10).cnf
+db|microprogram.(10).cnf
+# case_insensitive
+# source_file
+upc.bdf
+2b9c927f64e883455e5ad4b5aa22599
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+upc:inst19
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|microprogram.(11).cnf
+db|microprogram.(11).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+ENT
+-1
+3
+ENP
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+}
+# include_file {
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+upc:inst19|74161:inst
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|microprogram.(12).cnf
+db|microprogram.(12).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+upc:inst19|74161:inst|f74161:sub
+upc:inst19|74161:inst1|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|microprogram.(13).cnf
+db|microprogram.(13).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+ENT
+-1
+3
+ENP
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+}
+# include_file {
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+upc:inst19|74161:inst1
+}
+# macro_sequence
+
+# end
+# entity
+tri-8
+# storage
+db|microprogram.(15).cnf
+db|microprogram.(15).cnf
+# case_insensitive
+# source_file
+tri-8.bdf
+41a5bdd5c3bcb13081a85ae7cb2b49a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tri-8:inst21
+}
+# macro_sequence
+
+# end
+# entity
+74198
+# storage
+db|microprogram.(17).cnf
+db|microprogram.(17).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74198.bdf
+84eaf04a113e8b50dd62f877e31dc1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|mov:inst13|74198:inst
+}
+# macro_sequence
+
+# end
+# entity
+74285
+# storage
+db|microprogram.(19).cnf
+db|microprogram.(19).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74285.bdf
+3b73752db1d377fb87531feba2f5df5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|MUL:inst12|74285:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74284
+# storage
+db|microprogram.(20).cnf
+db|microprogram.(20).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74284.bdf
+6c709183d9d28fbe1fe22cf210d55ec6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|MUL:inst12|74284:inst
+}
+# macro_sequence
+
+# end
+# entity
+adr
+# storage
+db|microprogram.(2).cnf
+db|microprogram.(2).cnf
+# case_insensitive
+# source_file
+adr|adr.bdf
+c0996525a8d667152466d66013553eae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adr:inst2
+}
+# macro_sequence
+
+# end
+# entity
+3C1
+# storage
+db|microprogram.(14).cnf
+db|microprogram.(14).cnf
+# case_insensitive
+# source_file
+3C1.bdf
+257d83fec076ba27ffe2f2fd2ebbbbed
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|3C1:inst14
+}
+# macro_sequence
+
+# end
+# entity
+8b_add
+# storage
+db|microprogram.(16).cnf
+db|microprogram.(16).cnf
+# case_insensitive
+# source_file
+8b_add.bdf
+dcfea4ce1ec47fbfd0546c4e2cae6583
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|8b_add:inst11
+}
+# macro_sequence
+
+# end
+# entity
+MUL
+# storage
+db|microprogram.(18).cnf
+db|microprogram.(18).cnf
+# case_insensitive
+# source_file
+MUL.bdf
+88ba5f9f4975b4a9bfb8fcef6274954
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|MUL:inst12
+}
+# macro_sequence
+
+# end
+# entity
+lxmc
+# storage
+db|microprogram.(9).cnf
+db|microprogram.(9).cnf
+# case_insensitive
+# source_file
+lxmc.bdf
+3ca58e18fc845ffc091f620f719b3da
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+lxmc:inst4
+}
+# macro_sequence
+
+# end
+# entity
+mov
+# storage
+db|microprogram.(21).cnf
+db|microprogram.(21).cnf
+# case_insensitive
+# source_file
+mov.bdf
+71acd06751646e8e7e49e4098c3f3bf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|mov:inst13
+}
+# macro_sequence
+
+# end
+# entity
+74164
+# storage
+db|microprogram.(22).cnf
+db|microprogram.(22).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74164.bdf
+3bacbe34cd718b3a49cef8b232b2f86
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6|mov:inst13|74164:inst1
+}
+# macro_sequence
+
+# end
+# entity
+microprogram
+# storage
+db|microprogram.(0).cnf
+db|microprogram.(0).cnf
+# case_insensitive
+# source_file
+microprogram.bdf
+bbb7245c7fdf9b956a8dd363e41a934
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+ALU
+# storage
+db|microprogram.(3).cnf
+db|microprogram.(3).cnf
+# case_insensitive
+# source_file
+ALU.bdf
+4698378575bc6cc63c44b1dda2d6dd3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst6
+}
+# macro_sequence
+
+# end
+# complete
+

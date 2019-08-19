@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.746 ns
+From           : RAM0
+To             : 74273:IR|15
+From Clock     : --
+To Clock       : LXMC
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 33.854 ns
+From           : 74273:PC|18
+To             : LD2
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.171 ns
+From           : RAM0
+To             : LD2
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.958 ns
+From           : RAM1
+To             : 74273:MAR|14
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'LXMC'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 42.85 MHz ( period = 23.337 ns )
+From           : 74273:PC|18
+To             : 74273:IR|15
+From Clock     : LXMC
+To Clock       : LXMC
+Failed Paths   : 0
+
+Type           : Clock Setup: 'K1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 42.85 MHz ( period = 23.337 ns )
+From           : 74273:PC|18
+To             : 74273:IR|15
+From Clock     : K1
+To Clock       : K1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 42.85 MHz ( period = 23.337 ns )
+From           : 74273:PC|18
+To             : 74273:IR|15
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : beat:inst|4-1counter:inst|inst
+To             : 74273:MAR|13
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 688
+
+Type           : Clock Hold: 'K1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : beat:inst|4-1counter:inst|inst
+To             : 74273:MAR|13
+From Clock     : K1
+To Clock       : K1
+Failed Paths   : 688
+
+Type           : Clock Hold: 'LXMC'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : beat:inst|4-1counter:inst|inst
+To             : 74273:MAR|13
+From Clock     : LXMC
+To Clock       : LXMC
+Failed Paths   : 688
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 2064
+
+--------------------------------------------------------------------------------------
+

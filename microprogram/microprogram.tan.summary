@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.044 ns
+From           : UIR14
+To             : 74273:IR|14
+From Clock     : --
+To Clock       : P
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.704 ns
+From           : 74273:R1|16
+To             : RAM5
+From Clock     : UIR10
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.164 ns
+From           : UIR14
+To             : RAM5
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.724 ns
+From           : UIR7
+To             : 74273:MAR|19
+From Clock     : --
+To Clock       : UIR10
+Failed Paths   : 0
+
+Type           : Clock Setup: 'UIR10'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 113.35 MHz ( period = 8.822 ns )
+From           : 74273:R1|19
+To             : 74273:IR|16
+From Clock     : UIR10
+To Clock       : UIR10
+Failed Paths   : 0
+
+Type           : Clock Setup: 'P'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 114.01 MHz ( period = 8.771 ns )
+From           : 74273:R1|19
+To             : 74273:IR|16
+From Clock     : P
+To Clock       : P
+Failed Paths   : 0
+
+Type           : Clock Setup: 'UIR9'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 114.56 MHz ( period = 8.729 ns )
+From           : 74273:R1|19
+To             : 74273:IR|16
+From Clock     : UIR9
+To Clock       : UIR9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'UIR11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 114.57 MHz ( period = 8.728 ns )
+From           : 74273:R1|19
+To             : 74273:IR|16
+From Clock     : UIR11
+To Clock       : UIR11
+Failed Paths   : 0
+
+Type           : Clock Setup: 'UIR21'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 405.02 MHz ( period = 2.469 ns )
+From           : ALU:inst6|mov:inst13|74198:inst|117
+To             : ALU:inst6|mov:inst13|74198:inst|117
+From Clock     : UIR21
+To Clock       : UIR21
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,110 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		Controller_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C7
+set_global_assignment -name TOP_LEVEL_ENTITY Controller
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:37:22  MAY 22, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name BDF_FILE Controller.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SEARCH_PATH wr
+set_global_assignment -name SEARCH_PATH s3
+set_global_assignment -name SEARCH_PATH s2
+set_global_assignment -name SEARCH_PATH s1
+set_global_assignment -name SEARCH_PATH s0
+set_global_assignment -name SEARCH_PATH rd
+set_global_assignment -name SEARCH_PATH rb
+set_global_assignment -name SEARCH_PATH ra
+set_global_assignment -name SEARCH_PATH pb
+set_global_assignment -name SEARCH_PATH m
+set_global_assignment -name SEARCH_PATH g
+set_global_assignment -name SEARCH_PATH en1
+set_global_assignment -name SEARCH_PATH en0
+set_global_assignment -name SEARCH_PATH cpr1
+set_global_assignment -name SEARCH_PATH cpr0
+set_global_assignment -name SEARCH_PATH cpmar
+set_global_assignment -name SEARCH_PATH cppc
+set_global_assignment -name SEARCH_PATH cpir
+set_global_assignment -name SEARCH_PATH cn
+set_global_assignment -name SEARCH_PATH ma
+set_global_assignment -name SEARCH_PATH c
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_77 -to W1
+set_location_assignment PIN_80 -to W2
+set_location_assignment PIN_81 -to T1
+set_location_assignment PIN_82 -to T2
+set_location_assignment PIN_84 -to T3
+set_location_assignment PIN_86 -to T4
+set_location_assignment PIN_132 -to P
+set_location_assignment PIN_87 -to HALT
+set_location_assignment PIN_88 -to ADD
+set_location_assignment PIN_67 -to SUB
+set_location_assignment PIN_68 -to MUL
+set_location_assignment PIN_69 -to AND
+set_location_assignment PIN_70 -to OR
+set_location_assignment PIN_72 -to NOT
+set_location_assignment PIN_74 -to XOR
+set_location_assignment PIN_75 -to MOV0
+set_location_assignment PIN_76 -to MOV1
+set_location_assignment PIN_23 -to B0
+set_location_assignment PIN_24 -to B1
+set_location_assignment PIN_27 -to LOAD0
+set_location_assignment PIN_28 -to LOAD1
+set_location_assignment PIN_208 -to LOAD2
+set_location_assignment PIN_129 -to LOAD3
+set_location_assignment PIN_130 -to LOAD4
+set_location_assignment PIN_107 -to LOAD5
+set_global_assignment -name MISC_FILE "D:/Monday/Project/HardWiring/Controller/Controller.dpf"
+set_location_assignment PIN_151 -to L0
+set_location_assignment PIN_152 -to L1
+set_location_assignment PIN_160 -to L2
+set_location_assignment PIN_161 -to L3
+set_location_assignment PIN_162 -to L4
+set_location_assignment PIN_163 -to L5
+set_location_assignment PIN_164 -to L6
+set_location_assignment PIN_165 -to L7
+set_location_assignment PIN_128 -to L8
+set_location_assignment PIN_133 -to L9
+set_location_assignment PIN_134 -to L10
+set_location_assignment PIN_135 -to L11
+set_location_assignment PIN_137 -to L12
+set_location_assignment PIN_138 -to L13
+set_location_assignment PIN_139 -to L14
+set_location_assignment PIN_141 -to L15
+set_location_assignment PIN_11 -to L16
+set_location_assignment PIN_12 -to L17
+set_location_assignment PIN_13 -to L18
+set_location_assignment PIN_14 -to L19
+set_location_assignment PIN_15 -to L20

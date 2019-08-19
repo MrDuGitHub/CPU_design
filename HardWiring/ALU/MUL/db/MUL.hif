@@ -1,0 +1,93 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+2-4|
+lxmc|
+not|
+tri|
+adr|
+upc|
+2c1|
+8b-add|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74285
+# storage
+db|MUL.(1).cnf
+db|MUL.(1).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74285.bdf
+3b73752db1d377fb87531feba2f5df5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74285:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74284
+# storage
+db|MUL.(2).cnf
+db|MUL.(2).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74284.bdf
+6c709183d9d28fbe1fe22cf210d55ec6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74284:inst
+}
+# macro_sequence
+
+# end
+# entity
+MUL
+# storage
+db|MUL.(0).cnf
+db|MUL.(0).cnf
+# case_insensitive
+# source_file
+MUL.bdf
+88ba5f9f4975b4a9bfb8fcef6274954
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

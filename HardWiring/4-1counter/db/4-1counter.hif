@@ -1,0 +1,55 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+942
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+alu|
+2c1 - ¸±±¾|
+2-4|
+lxmc|
+not|
+tri|
+adr|
+upc|
+2c1|
+8b-add|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+4-1counter
+# storage
+db|4-1counter.(0).cnf
+db|4-1counter.(0).cnf
+# case_insensitive
+# source_file
+4-1counter.bdf
+15623bb1c6d2e4c7a4832a3d198ac445
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

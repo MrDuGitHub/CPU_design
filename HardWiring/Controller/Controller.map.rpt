@@ -1,0 +1,329 @@
+Analysis & Synthesis report for Controller
+Fri May 25 19:53:51 2018
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri May 25 19:53:51 2018   ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name                      ; Controller                              ;
+; Top-level Entity Name              ; Controller                              ;
+; Family                             ; Cyclone II                              ;
+; Total logic elements               ; 79                                      ;
+;     Total combinational functions  ; 79                                      ;
+;     Dedicated logic registers      ; 0                                       ;
+; Total registers                    ; 0                                       ;
+; Total pins                         ; 56                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                       ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP2C8Q208C7        ;                    ;
+; Top-level entity name                                          ; Controller         ; Controller         ;
+; Family name                                                    ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                        ; Off                ;                    ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Optimization Technique                                         ; Balanced           ; Balanced           ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Perform gate-level register retiming                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                 ; On                 ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                            ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+
+; Controller.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Monday/Project/HardWiring/Controller/Controller.bdf  ;
+; MA.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/ma/MA.bdf       ;
+; RA.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/ra/RA.bdf       ;
+; PB.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/pb/PB.bdf       ;
+; RB.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/rb/RB.bdf       ;
+; EN0.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/en0/EN0.bdf     ;
+; EN1.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/en1/EN1.bdf     ;
+; CPR0.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cpr0/CPR0.bdf   ;
+; CPR1.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cpr1/CPR1.bdf   ;
+; CPPC.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cppc/CPPC.bdf   ;
+; CPIR.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cpir/CPIR.bdf   ;
+; RD.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/rd/RD.bdf       ;
+; C.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/c/C.bdf         ;
+; G.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/g/G.bdf         ;
+; M.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/m/M.bdf         ;
+; S3.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/s3/S3.bdf       ;
+; S2.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/s2/S2.bdf       ;
+; S1.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/s1/S1.bdf       ;
+; S0.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/s0/S0.bdf       ;
+; CN.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cn/CN.bdf       ;
+; WR.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/wr/WR.bdf       ;
+; CPMAR.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Monday/Project/HardWiring/Controller/cpmar/CPMAR.bdf ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 79    ;
+;                                             ;       ;
+; Total combinational functions               ; 79    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 54    ;
+;     -- 3 input functions                    ; 12    ;
+;     -- <=2 input functions                  ; 13    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 79    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 56    ;
+; Maximum fan-out node                        ; W2    ;
+; Maximum fan-out                             ; 22    ;
+; Total fan-out                               ; 301   ;
+; Average fan-out                             ; 2.23  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; |Controller                ; 79 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |Controller              ; work         ;
+;    |C:inst13|              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|C:inst13     ; work         ;
+;    |CN:inst20|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CN:inst20    ; work         ;
+;    |CPIR:inst2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CPIR:inst2   ; work         ;
+;    |CPMAR:inst17|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CPMAR:inst17 ; work         ;
+;    |CPPC:inst3|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CPPC:inst3   ; work         ;
+;    |CPR0:inst5|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CPR0:inst5   ; work         ;
+;    |CPR1:inst4|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|CPR1:inst4   ; work         ;
+;    |EN0:inst10|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|EN0:inst10   ; work         ;
+;    |EN1:inst6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|EN1:inst6    ; work         ;
+;    |G:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|G:inst15     ; work         ;
+;    |M:inst|                ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|M:inst       ; work         ;
+;    |MA:inst11|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|MA:inst11    ; work         ;
+;    |PB:inst9|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|PB:inst9     ; work         ;
+;    |RA:inst7|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|RA:inst7     ; work         ;
+;    |RB:inst8|              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|RB:inst8     ; work         ;
+;    |RD:inst1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|RD:inst1     ; work         ;
+;    |S0:inst24|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|S0:inst24    ; work         ;
+;    |S1:inst23|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|S1:inst23    ; work         ;
+;    |S2:inst21|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|S2:inst21    ; work         ;
+;    |S3:inst16|             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|S3:inst16    ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Fri May 25 19:53:50 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Controller -c Controller
+Info: Found 1 design units, including 1 entities, in source file Controller.bdf
+    Info: Found entity 1: Controller
+Info: Elaborating entity "Controller" for the top level hierarchy
+Warning: Using design file ma/MA.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: MA
+Info: Elaborating entity "MA" for hierarchy "MA:inst11"
+Warning: Using design file ra/RA.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: RA
+Info: Elaborating entity "RA" for hierarchy "RA:inst7"
+Warning: Using design file pb/PB.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: PB
+Info: Elaborating entity "PB" for hierarchy "PB:inst9"
+Warning: Using design file rb/RB.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: RB
+Info: Elaborating entity "RB" for hierarchy "RB:inst8"
+Warning: Using design file en0/EN0.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: EN0
+Info: Elaborating entity "EN0" for hierarchy "EN0:inst10"
+Warning: Block or symbol "OR12" of instance "inst9" overlaps another block or symbol
+Warning: Using design file en1/EN1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: EN1
+Info: Elaborating entity "EN1" for hierarchy "EN1:inst6"
+Warning: Using design file cpr0/CPR0.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CPR0
+Info: Elaborating entity "CPR0" for hierarchy "CPR0:inst5"
+Warning: Block or symbol "OR8" of instance "inst" overlaps another block or symbol
+Warning: Using design file cpr1/CPR1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CPR1
+Info: Elaborating entity "CPR1" for hierarchy "CPR1:inst4"
+Warning: Using design file cppc/CPPC.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CPPC
+Info: Elaborating entity "CPPC" for hierarchy "CPPC:inst3"
+Warning: Using design file cpir/CPIR.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CPIR
+Info: Elaborating entity "CPIR" for hierarchy "CPIR:inst2"
+Warning: Using design file rd/RD.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: RD
+Info: Elaborating entity "RD" for hierarchy "RD:inst1"
+Warning: Using design file c/C.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: C
+Info: Elaborating entity "C" for hierarchy "C:inst13"
+Warning: Block or symbol "OR4" of instance "inst" overlaps another block or symbol
+Warning: Using design file g/G.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: G
+Info: Elaborating entity "G" for hierarchy "G:inst15"
+Warning: Using design file m/M.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: M
+Info: Elaborating entity "M" for hierarchy "M:inst"
+Warning: Using design file s3/S3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: S3
+Info: Elaborating entity "S3" for hierarchy "S3:inst16"
+Warning: Block or symbol "OR8" of instance "inst16" overlaps another block or symbol
+Warning: Using design file s2/S2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: S2
+Info: Elaborating entity "S2" for hierarchy "S2:inst21"
+Warning: Using design file s1/S1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: S1
+Info: Elaborating entity "S1" for hierarchy "S1:inst23"
+Warning: Using design file s0/S0.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: S0
+Info: Elaborating entity "S0" for hierarchy "S0:inst24"
+Warning: Using design file cn/CN.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CN
+Info: Elaborating entity "CN" for hierarchy "CN:inst20"
+Warning: Using design file wr/WR.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: WR
+Info: Elaborating entity "WR" for hierarchy "WR:inst12"
+Warning: Block or symbol "OR4" of instance "inst" overlaps another block or symbol
+Warning: Using design file cpmar/CPMAR.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CPMAR
+Info: Elaborating entity "CPMAR" for hierarchy "CPMAR:inst17"
+Warning: Block or symbol "OR4" of instance "inst5" overlaps another block or symbol
+Info: Implemented 135 device resources after synthesis - the final resource count might be different
+    Info: Implemented 33 input pins
+    Info: Implemented 23 output pins
+    Info: Implemented 79 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 211 megabytes
+    Info: Processing ended: Fri May 25 19:53:51 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

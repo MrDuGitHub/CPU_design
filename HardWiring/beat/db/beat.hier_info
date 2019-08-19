@@ -1,0 +1,35 @@
+|beat
+T1 <= 2-4:inst1.z1
+LXMC1 => 4-1counter:inst.CLK
+CLR => 4-1counter:inst.CLR
+CLR => inst2.ACLR
+T2 <= 2-4:inst1.z2
+T3 <= 2-4:inst1.z3
+T4 <= 2-4:inst1.z0
+W2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+W1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|beat|2-4:inst1
+z3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a1 => inst.IN0
+a1 => inst8.IN0
+a1 => inst4.IN0
+a1 => inst2.IN0
+a0 => inst.IN1
+a0 => inst7.IN0
+a0 => inst3.IN0
+a0 => inst5.IN0
+z0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+z1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+z2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|beat|4-1counter:inst
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLK => inst.CLK
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

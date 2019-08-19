@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 28 14:54:09 2018
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : hardwiring
+Top-level Entity Name : hardwiring
+Family : Cyclone II
+Total logic elements : 230
+    Total combinational functions : 230
+    Dedicated logic registers : 42
+Total registers : 42
+Total pins : 69
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
